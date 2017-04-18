@@ -39,7 +39,7 @@
 
 .barra {
   position: fixed;
-  top: 0%;
+  bottom: 0%;
   left: 0%;
   width: 100%;
   background: url('./icons/header-bg-long.jpg') #282323;
@@ -68,19 +68,19 @@
 }
 
 .img_dioses_uno {
-  padding-top: 30%;
+  padding-top: 20%;
 }
 
 .img_dioses_dos {
-  padding-top: 60%;
+  padding-top: 50%;
 }
 
 .img_dioses_tres {
-  padding-top: 90%;
+  padding-top: 80%;
 }
 
 .img_dioses_cuatro {
-  padding-top: 120%;
+  padding-top: 110%;
 }
 
 @keyframes uno {	
