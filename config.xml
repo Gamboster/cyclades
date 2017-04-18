@@ -4,5 +4,5 @@
         <icon src="res/android/icon/hdpi.png" qualifier="hdpi" />
         <icon src="res/android/icon/xhdpi.png" qualifier="xhdpi" />
         <icon src="res/android/icon/xxhdpi.png" qualifier="xxhdpi" />
-        <icon src="res/android/icon/xxxhdpi.png" qualifier="fr-xxhdpi" />
+        <icon src="res/android/icon/fr-xxhdpi.png" qualifier="fr-xxhdpi" />
     </platform>
