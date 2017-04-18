@@ -1,8 +1,0 @@
-    <platform name="android">
-        <icon src="res/android/icon/ldpi.png" qualifier="ldpi" />
-        <icon src="res/android/icon/mdpi.png" qualifier="mdpi" />
-        <icon src="res/android/icon/hdpi.png" qualifier="hdpi" />
-        <icon src="res/android/icon/xhdpi.png" qualifier="xhdpi" />
-        <icon src="res/android/icon/xxhdpi.png" qualifier="xxhdpi" />
-        <icon src="res/android/icon/fr-xxhdpi.png" qualifier="fr-xxhdpi" />
-    </platform>

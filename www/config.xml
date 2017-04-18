@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = ""
+        version   = "1.0.0">
+
+    <name>Cyclades</name>
+
+    <description>
+        Aplicación que permite el sorteo de dioses para el juego de mesa Cyclades.
+    </description>
+
+    <author href="https://github.com/movilla" email="moviglez@gmail.com">
+        Movilla
+    </author>
+
+    <preference name="permissions"                value="none"/>
+    <preference name="orientation"                value="landscape" />  
+
+    <icon src="icon.png" />
+    <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+    <icon src="res/icon/android/xxhdpi.png"  gap:platform="android"    gap:qualifier="xxhdpi" />
+    <icon src="res/icon/android/fr-xxhdpi.png"  gap:platform="android"    gap:qualifier="fr-xxhdpi" />
+
+</widget>
