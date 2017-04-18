@@ -1,0 +1,42 @@
+#dioses {
+  text-align: center;
+}
+
+#dios_uno, #dios_dos, #dios_tres, #dios_cuatro {
+  font-size: 3em;
+  text-align: center;
+  color: #f60a05;
+  text-shadow: -0.1em 0.1em 0.04em #000;
+}
+
+.barra {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background: url('./icons/header-bg-long.jpg') #282323;
+  padding-top: 3%;
+  box-shadow: 0 1px 2px #333;
+  z-index: 16;
+}
+
+#boton {
+    position: relative;
+    margin-top: -2%;
+    z-index: 20;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.sorteo{
+  font-size: 1em;
+}
+
+.img_dioses_uno, .img_dioses_dos, .img_dioses_tres, .img_dioses_cuatro {
+  position: relative;
+  width: 100%;
+}
+
+.img_dioses_uno {
+  padding-top: 2.5em;
+}
