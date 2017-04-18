@@ -1,3 +1,31 @@
+@media (orientation: portrait) {
+    #portrait{
+        display: block;
+          }
+}
+
+@font-face {
+  font-family:'Diogenes';
+  src: url('./fonts/DIOGENES.ttf');
+  font-weight: 100;
+}
+
+* {
+  font-family: Diogenes, Open Sans, sans-serif;
+}
+
+
+#fondo {
+  position: fixed;
+  background: url("img/fondo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width:100%;
+  height:100%;
+  top: 0rem;
+  left: 0rem;
+  z-index: -2;
+}
+
 #dioses {
   text-align: center;
 }
@@ -33,10 +61,34 @@
 }
 
 .img_dioses_uno, .img_dioses_dos, .img_dioses_tres, .img_dioses_cuatro {
-  position: relative;
+  position: fixed;
   width: 100%;
+  z-index: 2;
+  left: 0%;
 }
 
 .img_dioses_uno {
-  padding-top: 2.5em;
+  padding-top: 30%;
+}
+
+.img_dioses_dos {
+  padding-top: 60%;
+}
+
+.img_dioses_tres {
+  padding-top: 90%;
+}
+
+.img_dioses_cuatro {
+  padding-top: 120%;
+}
+
+@keyframes uno {	
+    0%  {padding-left: 110%;}
+	100%    {padding-left: 0%;}
+}
+
+@keyframes dos {	
+    0%  {left: -110%;}
+	100%    {left: 0%;}
 }
