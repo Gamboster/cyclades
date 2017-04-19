@@ -10,6 +10,12 @@ Array.prototype.shuffle = function() {
   return this;
 }
 
+// para cinco jugadores
+
+var jugadores = document.getElementById('cincojug').getAttribute('data-jugadores');
+
+if (jugadores == 'si') {
+
 document.querySelector('#click').onclick = function () {
 
 var nuevosort = document.getElementById('dios_uno').getAttribute('data-sorteo');
@@ -81,4 +87,14 @@ imgdioscuatro.style.animation = 'uno 1.50s forwards';
   document.getElementById('dios_uno').setAttribute('data-sorteo', 'si')
 }
 
+}
+
+}
+
+// para dos jugadores
+
+document.querySelector('#clickdos').onclick = function () {
+  var juegosados = confirm('¿Cambiar a dos juegadores?');
+    if (juegosados == true) {
+    }
 }
