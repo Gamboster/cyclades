@@ -26,6 +26,10 @@
   z-index: -2;
 }
 
+#click  {
+  width: 25%;
+}
+
 #dioses {
   text-align: center;
 }
@@ -91,4 +95,9 @@
 @keyframes dos {	
     0%  {left: -110%;}
 	100%    {left: 0%;}
+}
+
+@keyframes tres {	
+    0%  {left: 0%;}
+	100%    {left: -110%;}
 }
