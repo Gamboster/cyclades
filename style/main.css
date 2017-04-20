@@ -85,6 +85,7 @@
 
 #cincojug {
     margin-left: 0%;
+    visibility: hidden;
 }
 
 .sorteo{
@@ -115,16 +116,21 @@
 }
 
 @keyframes uno {	
-    0%  {padding-left: 110%;}
-	100%    {padding-left: 0%;}
+    0%  {left: 110%;}
+    100%    {left: 0%;}
 }
 
 @keyframes dos {	
     0%  {left: -110%;}
-	100%    {left: 0%;}
+    100%    {left: 0%;}
 }
 
 @keyframes tres {	
     0%  {left: 0%;}
-	100%    {left: -110%;}
+    100%    {left: -110%;}
+}
+
+@keyframes cuatro {	
+    0%  {left: 0%;}
+    100%    {left: -110%;}
 }
