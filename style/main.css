@@ -61,6 +61,10 @@
     margin-left: 2%;
 }
 
+#clickdos, #clicktres, #clickcuatro, #clickcinco {
+  width: 2em;
+}
+
 #dosjug, #tresjug, #cuatrojug, #cincojug {
     position: relative;
     display: flex;
