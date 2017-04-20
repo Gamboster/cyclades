@@ -115,6 +115,10 @@
   padding-top: 110%;
 }
 
+.dosplayers, .tresplayers, .cuatroplayers {
+  margin-left: 0.1em;
+}
+
 @keyframes uno {	
     0%  {left: 110%;}
     100%    {left: 0%;}
