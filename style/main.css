@@ -116,7 +116,7 @@
 }
 
 .dosplayers, .tresplayers, .cuatroplayers {
-  margin-left: 0.1em;
+  padding: 0.2em 0.2em;
 }
 
 @keyframes uno {	
