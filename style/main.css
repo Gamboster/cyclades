@@ -48,7 +48,7 @@
   width: 100%;
   background: url('./icons/header-bg-long.jpg') #282323;
   padding-top: 3%;
-  box-shadow: 0 1px 2px #333;
+  box-shadow: 0em -0.1em 0.2em rgba(0,0,0,0.75);
   z-index: 16;
   display: flex;
 }
