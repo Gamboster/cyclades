@@ -863,13 +863,13 @@ var juegosados = confirm('¿Cambiar a cuatro jugadores?');
       setTimeout(function() {
 
         var imgdiosuno = document.getElementById('img_uno');
-        imgdiosuno.style.animation = 'tres 1s forwards';
+        if (imgdiosuno) {imgdiosuno.style.animation = 'tres 1s forwards';}
         var imgdiosdos = document.getElementById('img_dos');
-        imgdiosdos.style.animation = 'tres 1.20s forwards';
+        if (imgdiosdos) {imgdiosdos.style.animation = 'tres 1.20s forwards';}
         var imgdiostres = document.getElementById('img_tres');
-        imgdiostres.style.animation = 'tres 1.40s forwards';
+        if (imgdiostres) {imgdiostres.style.animation = 'tres 1.40s forwards';}
         var imgdioscuatro = document.getElementById('img_cuatro');
-        imgdioscuatro.style.animation = 'tres 1.50s forwards';
+        if (imgdioscuatro) {imgdioscuatro.style.animation = 'tres 1.50s forwards';}
 
       }, 350);
 
