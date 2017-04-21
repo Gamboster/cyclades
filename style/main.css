@@ -28,6 +28,9 @@
 
 #click  {
   width: 130%;
+  color: #000;
+  text-shadow: 0.1em 0.1em #AAA;
+  box-shadow: 0.1em 0.1em #000;
 }
 
 #dioses {
@@ -38,7 +41,7 @@
   font-size: 3em;
   text-align: center;
   color: #f60a05;
-  text-shadow: -0.1em 0.1em 0.04em #000;
+  text-shadow: -0.1em 0.1em 0.04em #EEE;
 }
 
 .barra {
@@ -63,6 +66,15 @@
 
 #clickdos, #clicktres, #clickcuatro, #clickcinco {
   width: 2em;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  color: #FFF;
+  text-shadow: 0.1em 0.1em #000;
+
 }
 
 #dosjug, #tresjug, #cuatrojug, #cincojug {
