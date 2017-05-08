@@ -122,7 +122,10 @@
 
 #cincojug {
     margin-left: 0%;
-    visibility: hidden;
+}
+
+.cincoplayers {
+    color: red;
 }
 
 .sorteo{

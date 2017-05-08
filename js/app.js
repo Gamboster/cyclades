@@ -807,43 +807,52 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
 
 document.querySelector('#clickdos').onclick = function () {
 
-var juegosados = confirm('¿Cambiar a dos jugadores?');
+var cuantosson = document.getElementById('cincojug').getAttribute('data-jugadores');
 
-  if (juegosados === true) {
+  if (cuantosson !== '2') {
 
-    var marcador = document.getElementById('rondas');
-    marcador.setAttribute('data-rondas', 0);
-    marcador.innerHTML = '<a class="marronda">Ronda: 0</a>';
+    var juegosados = confirm('¿Cambiar a dos jugadores?');
 
-    document.getElementById('cincojug').setAttribute('data-jugadores', '2');
+      if (juegosados === true) {
 
-    document.getElementById('dosjug').style.visibility ='hidden';
-    document.getElementById('tresjug').style.visibility ='visible';
-    document.getElementById('cuatrojug').style.visibility ='visible';
-    document.getElementById('cincojug').style.visibility ='visible';
+      var marcador = document.getElementById('rondas');
+      marcador.setAttribute('data-rondas', 0);
+      marcador.innerHTML = '<a class="marronda">Ronda: 0</a>';
 
-      setTimeout(function() {
+      document.getElementById('cincojug').setAttribute('data-jugadores', '2');
 
-        var imgdiosuno = document.getElementById('img_uno');
-        if (imgdiosuno) {imgdiosuno.style.animation = 'tres 1s forwards';}
-        var imgdiosdos = document.getElementById('img_dos');
-        if (imgdiosdos) { imgdiosdos.style.animation = 'tres 1.20s forwards';}
-        var imgdiostres = document.getElementById('img_tres');
-        if (imgdiostres) {imgdiostres.style.animation = 'tres 1.40s forwards';}
-        var imgdioscuatro = document.getElementById('img_cuatro');
-        if (imgdioscuatro) {imgdioscuatro.style.animation = 'tres 1.60s forwards';}
+      document.getElementById('colordos').style.color ='red';
+      document.getElementById('colortres').style.color ='#FFF';
+      document.getElementById('colorcuatro').style.color ='#FFF';
+      document.getElementById('colorcinco').style.color ='#FFF';
 
-      }, 350);
+        setTimeout(function() {
 
-    document.getElementById('dios_uno').setAttribute('data-sorteo', 'no')
+          var imgdiosuno = document.getElementById('img_uno');
+          if (imgdiosuno) {imgdiosuno.style.animation = 'tres 1s forwards';}
+          var imgdiosdos = document.getElementById('img_dos');
+          if (imgdiosdos) { imgdiosdos.style.animation = 'tres 1.20s forwards';}
+          var imgdiostres = document.getElementById('img_tres');
+          if (imgdiostres) {imgdiostres.style.animation = 'tres 1.40s forwards';}
+          var imgdioscuatro = document.getElementById('img_cuatro');
+          if (imgdioscuatro) {imgdioscuatro.style.animation = 'tres 1.60s forwards';}
 
-   }
+        }, 350);
+
+        document.getElementById('dios_uno').setAttribute('data-sorteo', 'no')
+
+    }
+  }
 }
 
 
 // boton para cuatro jugadores
 
 document.querySelector('#clickcuatro').onclick = function () {
+
+var cuantosson = document.getElementById('cincojug').getAttribute('data-jugadores');
+
+if (cuantosson !== '4') {
 
 var juegosados = confirm('¿Cambiar a cuatro jugadores?');
 
@@ -855,10 +864,10 @@ var juegosados = confirm('¿Cambiar a cuatro jugadores?');
 
     document.getElementById('cincojug').setAttribute('data-jugadores', '4');
 
-    document.getElementById('dosjug').style.visibility ='visible';
-    document.getElementById('tresjug').style.visibility ='visible';
-    document.getElementById('cuatrojug').style.visibility ='hidden';
-    document.getElementById('cincojug').style.visibility ='visible';
+    document.getElementById('colordos').style.color ='#FFF';
+    document.getElementById('colortres').style.color ='#FFF';
+    document.getElementById('colorcuatro').style.color ='red';
+    document.getElementById('colorcinco').style.color ='#FFF';
 
       setTimeout(function() {
 
@@ -876,11 +885,16 @@ var juegosados = confirm('¿Cambiar a cuatro jugadores?');
     document.getElementById('dios_uno').setAttribute('data-sorteo', 'no')
 
    }
+  }
 }
 
 // boton para tres jugadores
 
 document.querySelector('#clicktres').onclick = function () {
+
+var cuantosson = document.getElementById('cincojug').getAttribute('data-jugadores');
+
+if (cuantosson !== '3') {
 
 var juegosados = confirm('¿Cambiar a tres jugadores?');
 
@@ -892,10 +906,10 @@ var juegosados = confirm('¿Cambiar a tres jugadores?');
 
     document.getElementById('cincojug').setAttribute('data-jugadores', '3');
 
-    document.getElementById('dosjug').style.visibility ='visible';
-    document.getElementById('tresjug').style.visibility ='hidden';
-    document.getElementById('cuatrojug').style.visibility ='visible';
-    document.getElementById('cincojug').style.visibility ='visible';
+    document.getElementById('colordos').style.color ='#FFF';
+    document.getElementById('colortres').style.color ='red';
+    document.getElementById('colorcuatro').style.color ='#FFF';
+    document.getElementById('colorcinco').style.color ='#FFF';
 
       setTimeout(function() {
 
@@ -913,41 +927,47 @@ var juegosados = confirm('¿Cambiar a tres jugadores?');
     document.getElementById('dios_uno').setAttribute('data-sorteo', 'no')
 
    }
+  }
 }
 
 // boton para cinco jugadores
 
 document.querySelector('#clickcinco').onclick = function () {
 
-var juegosados = confirm('¿Cambiar a cinco jugadores?');
+var cuantosson = document.getElementById('cincojug').getAttribute('data-jugadores');
 
-  if (juegosados === true) {
+if (cuantosson !== '5') {
 
-    var marcador = document.getElementById('rondas');
+  var juegosados = confirm('¿Cambiar a cinco jugadores?');
+
+    if (juegosados === true) {
+
+      var marcador = document.getElementById('rondas');
     marcador.setAttribute('data-rondas', 0);
     marcador.innerHTML = '<a class="marronda">Ronda: 0</a>';
 
     document.getElementById('cincojug').setAttribute('data-jugadores', '5');
 
-    document.getElementById('dosjug').style.visibility ='visible';
-    document.getElementById('tresjug').style.visibility ='visible';
-    document.getElementById('cuatrojug').style.visibility ='visible';
-    document.getElementById('cincojug').style.visibility ='hidden';
+    document.getElementById('colordos').style.color ='#FFF';
+    document.getElementById('colortres').style.color ='#FFF';
+    document.getElementById('colorcuatro').style.color ='#FFF';
+    document.getElementById('colorcinco').style.color ='red';
 
-      setTimeout(function() {
+        setTimeout(function() {
 
         var imgdiosuno = document.getElementById('img_uno');
-        imgdiosuno.style.animation = 'tres 1s forwards';
+        if (imgdiosuno) {imgdiosuno.style.animation = 'tres 1s forwards';}
         var imgdiosdos = document.getElementById('img_dos');
-        imgdiosdos.style.animation = 'tres 1.20s forwards';
+        if (imgdiosdos) {imgdiosdos.style.animation = 'tres 1.20s forwards';}
         var imgdiostres = document.getElementById('img_tres');
-        imgdiostres.style.animation = 'tres 1.40s forwards';
+        if (imgdiostres) {imgdiostres.style.animation = 'tres 1.40s forwards';}
         var imgdioscuatro = document.getElementById('img_cuatro');
-        imgdioscuatro.style.animation = 'tres 1.50s forwards';
+        if (imgdioscuatro) {imgdioscuatro.style.animation = 'tres 1.50s forwards';}
 
-      }, 350);
+        }, 350);
 
-    document.getElementById('dios_uno').setAttribute('data-sorteo', 'no')
+      document.getElementById('dios_uno').setAttribute('data-sorteo', 'no')
 
-   }
+     }
+  }
 }
