@@ -24,6 +24,49 @@ var rondacero = marcador.getAttribute('data-rondas');
 marcador.setAttribute('data-rondas', rondacero);
 marcador.innerHTML = '<a class="marronda">Ronda: '+rondacero+'</a>';
 
+// para hades
+
+var onhades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+
+if (onhades === 'no'){
+  
+  var dado1 = ['0', '1', '1', '2', '2', '3']
+  var sordado1 = dado1.shuffle();
+
+  var d1cara_1 = sordado1[0]
+  var d1cara_2 = sordado1[1]
+  var d1cara_3 = sordado1[2]
+  var d1cara_4 = sordado1[3]
+  var d1cara_5 = sordado1[4]
+  var d1cara_6 = sordado1[5]
+
+  var dado2 = ['0', '1', '1', '2', '2', '3']
+  var sordado2 = dado2.shuffle();
+
+  var d2cara_1 = sordado2[0]
+  var d2cara_2 = sordado2[1]
+  var d2cara_3 = sordado2[2]
+  var d2cara_4 = sordado2[3]
+  var d2cara_5 = sordado2[4]
+  var d2cara_6 = sordado2[5]
+
+  var dadohares = (parseInt(d2cara_6) + parseInt(d1cara_6))
+
+  var amenaza = document.getElementById('dios_cuatro').getAttribute('data-amenaza');
+
+  var totalamenaza = (parseInt(dadohares) + parseInt(amenaza))
+
+  document.getElementById('dios_cuatro').setAttribute('data-amenaza', totalamenaza);
+
+var dioshades = document.getElementById('dioshades');
+dioshades.innerHTML = '<a class="amenzahades">Amenaza: '+totalamenaza+'</a>';
+
+    if (totalamenaza >= '9') {
+
+    document.getElementById('dios_cuatro').setAttribute('data-hades', 'si');
+
+    }
+}
 
 // para cinco jugadores
 
@@ -48,6 +91,15 @@ marcador.innerHTML = '<a class="marronda">Ronda: '+rondacero+'</a>';
         var azul_2 = bloque1[1]
         var azul_3 = bloque1[2]
         var azul_4 = bloque1[3]
+// puede ser hades
+        var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_4 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0'); 
+
+          
+          }
   
         document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
         document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';

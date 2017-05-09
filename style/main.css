@@ -26,6 +26,13 @@
   z-index: -2;
 }
 
+.icono_hades {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  top: -0.4em;
+}
+
 #click  {
   width: 130%;
   color: #000;
@@ -74,6 +81,14 @@
   position: relative;
   left: 10%;
   top: -0.3em;
+  text-shadow: 0.1em 0.1em grey;
+}
+
+.amenzahades {
+  color: #FFF;
+  position: fixed;
+  left: 75%;
+  top: 0.4em;
   text-shadow: 0.1em 0.1em grey;
 }
 
