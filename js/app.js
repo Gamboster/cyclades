@@ -59,7 +59,7 @@ if (onhades === 'no'){
   document.getElementById('dios_cuatro').setAttribute('data-amenaza', totalamenaza);
 
 var dioshades = document.getElementById('dioshades');
-dioshades.innerHTML = '<a class="amenzahades">Amenaza: '+totalamenaza+'</a>';
+dioshades.innerHTML = '<a class="amenzahades" style="animation: amenaza 1s forwards;" >Amenaza: '+totalamenaza+'</a>';
 
     if (totalamenaza >= '9') {
 

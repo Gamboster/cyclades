@@ -27,10 +27,11 @@
 }
 
 .icono_hades {
-  width: 32px;
-  height: 32px;
-  position: relative;
-  top: -0.4em;
+  position: fixed;
+  top: 0.5em;
+  left: 20%;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 #click  {
@@ -87,8 +88,8 @@
 .amenzahades {
   color: #FFF;
   position: fixed;
-  left: 75%;
-  top: 0.4em;
+  right: -20%;
+  top: 1%;
   text-shadow: 0.1em 0.1em grey;
 }
 
@@ -192,4 +193,9 @@
 @keyframes cuatro {	
     0%  {left: 0%;}
     100%    {left: -110%;}
+}
+
+@keyframes amenaza {	
+    0%  {right: -20%;}
+    100%    {right: 1%;}
 }
