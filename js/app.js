@@ -1154,7 +1154,7 @@ document.querySelector('#listadoiconos').onclick = function () {
 
   if (acthades === 'no') {
 
-      var confirmhades = confirm('¿Jugar con Hades?');
+      var confirmhades = confirm('¿Jugar con módulo Hades?');
       if (confirmhades === true) {
       
       document.getElementById('listadoiconos').setAttribute('data-juegodehades', 'si');
@@ -1163,7 +1163,7 @@ document.querySelector('#listadoiconos').onclick = function () {
   }
   else {
 
-    var noconfirmhades = confirm('¿Dejar de jugar con Hades?');
+    var noconfirmhades = confirm('¿Dejar de jugar con módulo Hades?');
     if (noconfirmhades === true) {
 
       document.getElementById('listadoiconos').setAttribute('data-juegodehades', 'no');
