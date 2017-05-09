@@ -50,7 +50,7 @@
   left: 0%;
   width: 100%;
   background: url('./icons/header-bg-long.jpg') #282323;
-  padding-top: 3%;
+  padding-top: 4%;
   box-shadow: 0em -0.1em 0.2em rgba(0,0,0,0.75);
   z-index: 16;
   display: flex;
@@ -71,9 +71,9 @@
 
 .marronda {
   color: #FFF;
-  position: relative;
-  left: 10%;
-  top: -0.3em;
+  position: fixed;
+  left: 2%;
+  top: 0.5em;
   text-shadow: 0.1em 0.1em grey;
 }
 
@@ -81,7 +81,7 @@
   color: #FFF;
   position: fixed;
   right: -40%;
-  top: 1%;
+  top: 0.5em;
   text-shadow: 0.1em 0.1em grey;
 }
 
@@ -91,6 +91,7 @@
   left: 30%;
   width: 1.5em;
   height: 1.5em;
+  border-radius: 25%;
 }
 
 #boton {
@@ -198,4 +199,14 @@
 @keyframes amenaza {	
     0%  {right: -40%;}
     100%    {right: 1%;}
+}
+
+@keyframes girapabajo {	
+        0%	{transform: rotate(0deg);}
+	100%    {transform: rotate(180deg);}
+}
+
+@keyframes girapariba {	
+        0%	{transform: rotate(180deg);}
+	100%    {transform: rotate(0deg);}
 }

@@ -27,8 +27,9 @@ marcador.innerHTML = '<a class="marronda">Ronda: '+rondacero+'</a>';
 // para hades
 
 var onhades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+var hadesconfirm = document.getElementById('listadoiconos').getAttribute('data-juegodehades');
 
-if (onhades === 'no'){
+if (onhades === 'no' && hadesconfirm === 'si'){
   
   var dado1 = ['0', '1', '1', '2', '2', '3']
   var sordado1 = dado1.shuffle();
@@ -96,9 +97,7 @@ dioshades.innerHTML = '<a class="amenzahades" style="animation: amenaza 1.5s for
           if (puedehades === 'si') {
               var azul_4 = 'hades'
               document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
-              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0'); 
-
-          
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
           }
   
         document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
@@ -174,6 +173,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = bloque1[0]
           var azul_3 = bloque1[1]
           var azul_4 = bloque1[2]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_3 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -199,6 +204,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = bloque1[0]
           var azul_3 = bloque1[1]
           var azul_4 = bloque1[2]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_3 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -224,6 +235,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = bloque1[0]
           var azul_3 = bloque1[1]
           var azul_4 = bloque1[2]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_3 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -249,6 +266,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = bloque1[0]
           var azul_3 = bloque1[1]
           var azul_4 = bloque1[2]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_3 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -326,6 +349,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = bloque1[0]
           var azul_3 = bloque1[1]
           var azul_4 = bloque1[2]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_3 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -351,6 +380,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = bloque1[0]
           var azul_3 = bloque1[1]
           var azul_4 = bloque1[2]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_3 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -376,6 +411,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = bloque1[0]
           var azul_3 = bloque1[1]
           var azul_4 = bloque1[2]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_3 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -401,6 +442,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = bloque1[0]
           var azul_3 = bloque1[1]
           var azul_4 = bloque1[2]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_3 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -480,6 +527,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = 'poseidon'
           var azul_3 = bloque1[0]
           var azul_4 = bloque1[1]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+            var azul_2 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -508,6 +561,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = 'atenea'
           var azul_3 = bloque1[0]
           var azul_4 = bloque1[1]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_2 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -536,6 +595,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = 'zeus'
           var azul_3 = bloque1[0]
           var azul_4 = bloque1[1]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_2 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -564,6 +629,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = 'ares'
           var azul_3 = bloque1[0]
           var azul_4 = bloque1[1]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_2 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -592,6 +663,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = 'poseidon'
           var azul_3 = bloque1[0]
           var azul_4 = bloque1[1]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_2 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -620,6 +697,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = 'zeus'
           var azul_3 = bloque1[0]
           var azul_4 = bloque1[1]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_2 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -648,6 +731,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = 'ares'
           var azul_3 = bloque1[0]
           var azul_4 = bloque1[1]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_2 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -676,6 +765,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = 'atenea'
           var azul_3 = bloque1[0]
           var azul_4 = bloque1[1]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_2 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -704,6 +799,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = 'zeus'
           var azul_3 = bloque1[0]
           var azul_4 = bloque1[1]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_2 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -732,6 +833,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = 'ares'
           var azul_3 = bloque1[0]
           var azul_4 = bloque1[1]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_2 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -760,6 +867,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = 'atenea'
           var azul_3 = bloque1[0]
           var azul_4 = bloque1[1]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_2 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -788,6 +901,12 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
           var azul_2 = 'poseidon'
           var azul_3 = bloque1[0]
           var azul_4 = bloque1[1]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_2 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
   
           document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" src="style/img/'+azul_1+'.png">';
           document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -806,9 +925,6 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
   document.getElementById('dios_uno').setAttribute('data-sorteo', 'no')
         }
 
-        else {
-          false
-        }
       }, 750);
 
   }
@@ -829,11 +945,17 @@ imgdioscuatro.style.animation = 'uno 1.60s forwards';
       var bloque0 = ['ares', 'poseidon', 'atenea', 'zeus']
       var sorteo0 = bloque0.shuffle();
       var sorteo1 = sorteo0.shuffle();
-    var bloque1 = sorteo1.shuffle();
-    var azul_1 = bloque1[0]
-    var azul_2 = bloque1[1]
-    var azul_3 = bloque1[2]
-    var azul_4 = bloque1[3]
+      var bloque1 = sorteo1.shuffle();
+      var azul_1 = bloque1[0]
+      var azul_2 = bloque1[1]
+      var azul_3 = bloque1[2]
+      var azul_4 = bloque1[3]
+          var puedehades = document.getElementById('dios_cuatro').getAttribute('data-hades');
+          if (puedehades === 'si') {
+              var azul_2 = 'hades'
+              document.getElementById('dios_cuatro').setAttribute('data-hades', 'no'); 
+              document.getElementById('dios_cuatro').setAttribute('data-amenaza', '0');           
+          }
    
     document.getElementById('dios_uno').innerHTML = '<img id="img_uno" class="img_dioses_uno" data-sorteo="no" src="style/img/'+azul_1+'.png">';
     document.getElementById("dios_dos").innerHTML = '<img id="img_dos" class="img_dioses_dos" src="style/img/'+azul_2+'.png">';
@@ -1018,8 +1140,36 @@ if (cuantosson !== '5') {
 
         }, 350);
 
-      document.getElementById('dios_uno').setAttribute('data-sorteo', 'no')
+      document.getElementById('dios_uno').setAttribute('data-sorteo', 'no');
 
      }
+  }
+}
+
+// activar juego para hades
+
+document.querySelector('#listadoiconos').onclick = function () {
+
+  var acthades = document.getElementById('listadoiconos').getAttribute('data-juegodehades');
+
+  if (acthades === 'no') {
+
+      var confirmhades = confirm('¿Jugar con Hades?');
+      if (confirmhades === true) {
+      
+      document.getElementById('listadoiconos').setAttribute('data-juegodehades', 'si');
+      document.getElementById('icon_hades').style.animation = 'girapabajo 1s forwards';
+      }
+  }
+  else {
+
+    var noconfirmhades = confirm('¿Dejar de jugar con Hades?');
+    if (noconfirmhades === true) {
+
+      document.getElementById('listadoiconos').setAttribute('data-juegodehades', 'no');
+      document.getElementById('icon_hades').style.animation = 'girapariba 1s forwards';
+      var dioshades = document.getElementById('dioshades');
+      dioshades.innerHTML = '<a class="amenzahades" style="" ></a>';
+    }
   }
 }
