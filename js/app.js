@@ -1220,30 +1220,23 @@ document.querySelector('#icon_ayuda').onclick = function () {
 
   if (noayuda === 'no') {
 
-      var confirmayuda = confirm('¿Mostrar ayuda?');
-      if (confirmayuda === true) {
-
         document.getElementById('icon_ayuda').setAttribute('data-ayuda', 'si');
-        document.getElementById('icon_ayuda').style.animation = 'girapabajo 1s forwards';
-        document.getElementById('ayudauno').style.visibility = 'initial';
-        document.getElementById('ayudados').style.visibility = 'initial';
-        document.getElementById('ayudatres').style.visibility = 'initial';
-        document.getElementById('ayudacuatro').style.visibility = 'initial';
+        document.getElementById('icon_ayuda').style.animation = 'girapabajo 2s forwards';
+        document.getElementById('ayudauno').style.animation = 'apir 1s forwards';
+        document.getElementById('ayudados').style.animation = 'apir 1s forwards';
+        document.getElementById('ayudatres').style.animation = 'apir 1s forwards';
+        document.getElementById('ayudacuatro').style.animation = 'apir 1s forwards';
      
-      }
 
   }
   else {
 
-    var noconfirmayuda = confirm('¿Dejar de mostrar ayuda?');
-    if (noconfirmayuda === true) {
         document.getElementById('icon_ayuda').setAttribute('data-ayuda', 'no');
-        document.getElementById('icon_ayuda').style.animation = 'girapariba 1s forwards';
-        document.getElementById('ayudauno').style.visibility = 'hidden';
-        document.getElementById('ayudados').style.visibility = 'hidden';
-        document.getElementById('ayudatres').style.visibility = 'hidden';
-        document.getElementById('ayudacuatro').style.visibility = 'hidden';
-    }
+        document.getElementById('icon_ayuda').style.animation = 'girapariba 2s forwards';
+        document.getElementById('ayudauno').style.animation = 'desapir 1s forwards';
+        document.getElementById('ayudados').style.animation = 'desapir 1s forwards';
+        document.getElementById('ayudatres').style.animation = 'desapir 1s forwards';
+        document.getElementById('ayudacuatro').style.animation = 'desapir 1s forwards';
 
   }
 
