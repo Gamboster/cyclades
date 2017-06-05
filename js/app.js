@@ -1159,6 +1159,25 @@ document.querySelector('#listadoiconos').onclick = function () {
       
       document.getElementById('listadoiconos').setAttribute('data-juegodehades', 'si');
       document.getElementById('icon_hades').style.animation = 'girapabajo 1s forwards';
+
+      // limpiar la pantalla
+
+      var imgdiosuno = document.getElementById('img_uno');
+      if (imgdiosuno) {imgdiosuno.style.animation = 'tres 1s forwards';}
+      var imgdiosdos = document.getElementById('img_dos');
+      if (imgdiosdos) {imgdiosdos.style.animation = 'tres 1.20s forwards';}
+      var imgdiostres = document.getElementById('img_tres');
+      if (imgdiostres) {imgdiostres.style.animation = 'tres 1.40s forwards';}
+      var imgdioscuatro = document.getElementById('img_cuatro');
+      if (imgdioscuatro) {imgdioscuatro.style.animation = 'tres 1.60s forwards';}
+
+      // poner marcador rondas a 0
+
+      var marcador = document.getElementById('rondas');
+      marcador.setAttribute('data-rondas', 0);
+      marcador.innerHTML = '<a class="marronda">Ronda: 0</a>';
+
+
       }
   }
   else {
@@ -1170,6 +1189,62 @@ document.querySelector('#listadoiconos').onclick = function () {
       document.getElementById('icon_hades').style.animation = 'girapariba 1s forwards';
       var dioshades = document.getElementById('dioshades');
       dioshades.innerHTML = '<a class="amenzahades" style="" ></a>';
+
+      // limpiar la pantalla
+
+      var imgdiosuno = document.getElementById('img_uno');
+      if (imgdiosuno) {imgdiosuno.style.animation = 'tres 1s forwards';}
+      var imgdiosdos = document.getElementById('img_dos');
+      if (imgdiosdos) {imgdiosdos.style.animation = 'tres 1.20s forwards';}
+      var imgdiostres = document.getElementById('img_tres');
+      if (imgdiostres) {imgdiostres.style.animation = 'tres 1.40s forwards';}
+      var imgdioscuatro = document.getElementById('img_cuatro');
+      if (imgdioscuatro) {imgdioscuatro.style.animation = 'tres 1.60s forwards';}
+
+      // poner marcador rondas a 0
+
+      var marcador = document.getElementById('rondas');
+      marcador.setAttribute('data-rondas', 0);
+      marcador.innerHTML = '<a class="marronda">Ronda: 0</a>';
+
+
+        
     }
   }
+}
+
+
+document.querySelector('#icon_ayuda').onclick = function () {
+
+  var noayuda = document.getElementById('icon_ayuda').getAttribute('data-ayuda');
+
+  if (noayuda === 'no') {
+
+      var confirmayuda = confirm('¿Mostrar ayuda?');
+      if (confirmayuda === true) {
+
+        document.getElementById('icon_ayuda').setAttribute('data-ayuda', 'si');
+        document.getElementById('icon_ayuda').style.animation = 'girapabajo 1s forwards';
+        document.getElementById('ayudauno').style.visibility = 'initial';
+        document.getElementById('ayudados').style.visibility = 'initial';
+        document.getElementById('ayudatres').style.visibility = 'initial';
+        document.getElementById('ayudacuatro').style.visibility = 'initial';
+     
+      }
+
+  }
+  else {
+
+    var noconfirmayuda = confirm('¿Dejar de mostrar ayuda?');
+    if (noconfirmayuda === true) {
+        document.getElementById('icon_ayuda').setAttribute('data-ayuda', 'no');
+        document.getElementById('icon_ayuda').style.animation = 'girapariba 1s forwards';
+        document.getElementById('ayudauno').style.visibility = 'hidden';
+        document.getElementById('ayudados').style.visibility = 'hidden';
+        document.getElementById('ayudatres').style.visibility = 'hidden';
+        document.getElementById('ayudacuatro').style.visibility = 'hidden';
+    }
+
+  }
+
 }

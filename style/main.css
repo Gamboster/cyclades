@@ -94,6 +94,15 @@
   border-radius: 25%;
 }
 
+.icono_ayuda {
+  position: absolute;
+  bottom: 25%;
+  left: 30%;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 25%;
+}
+
 #boton {
     position: relative;
     margin-top: -2%;
@@ -209,4 +218,102 @@
 @keyframes girapariba {	
         0%	{transform: rotate(180deg);}
 	100%    {transform: rotate(0deg);}
+}
+
+
+
+.balloon {
+  border-radius: 0.5em;
+  background-color: red;
+  color: white;
+  padding: 0.25em;
+  font-size: 2em;
+  position: fixed;
+  top: 20%;
+  z-index: 50;
+  visibility: hidden;
+}
+
+.balloon:before {
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 3em solid red;
+  border-right: 0.5em solid transparent;
+  border-left: 0.5em solid transparent;
+  margin: -3em 0 0 0em;
+}
+
+.balloondos {
+  border-radius: 0.5em;
+  background-color: red;
+  color: white;
+  padding: 0.25em;
+  font-size: 1.5em;
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  z-index: 50;
+  visibility: hidden;
+}
+
+.balloondos:before {
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 1em solid red;
+  border-right: 0.5em solid transparent;
+  border-left: 0.5em solid transparent;
+  margin: -1em 0 0 0em;
+}
+
+.balloontres {
+  border-radius: 0.5em;
+  background-color: red;
+  color: white;
+  padding: 0.25em;
+  font-size: 1.5em;
+  position: fixed;
+  bottom: 20%;
+  left: 5%;
+  z-index: 50;
+  visibility: hidden;
+}
+
+.balloontres:before {
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 3em solid red;
+  border-right: 0.5em solid transparent;
+  border-left: 0.5em solid transparent;
+  margin: 1.5em 0 0 0em;
+}
+
+.ballooncuatro {
+  border-radius: 0.5em;
+  background-color: red;
+  color: white;
+  padding: 0.25em;
+  font-size: 1.5em;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  z-index: 50;
+  visibility: hidden;
+}
+
+.ballooncuatro:before {
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 1em solid red;
+  border-right: 0.5em solid transparent;
+  border-left: 0.5em solid transparent;
+  margin: 1.5em 0 0 0em;
+  right: 10%;
 }
